@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Thumbnail Downloader
 // @namespace    https://github.com/dionesrosa
-// @version      1.2.0
+// @version      1.2.1
 // @description  Exibe miniaturas de vídeos do YouTube e permite download (versão leve)
 // @author       Diones Souza
 // @icon         https://cdn-icons-png.magnific.com/64/3938/3938026.png
