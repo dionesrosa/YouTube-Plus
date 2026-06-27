@@ -22,16 +22,6 @@
 
 ---
 
-## 📸 Demonstração
-
-| Página do vídeo | Popup com miniatura |
-|-----------------|---------------------|
-| ![Botão Miniaturas](screenshots/botao.png) | ![Popup](screenshots/popup.png) |
-
-> *Substitua pelos seus próprios screenshots*
-
----
-
 ## 🚀 Instalação
 
 1. Instale a extensão [Tampermonkey](https://www.tampermonkey.net/) no seu navegador.
@@ -62,17 +52,6 @@ O script foi desenvolvido com foco em desempenho:
 - **Fallback progressivo** para carregar a melhor miniatura disponível
 
 Testado no Chrome e Firefox com Tampermonkey.
-
----
-
-## 📂 Estrutura do repositório
-
-```
-YouTube-Thumbnail-Downloader/
-├── script.js          # Script principal (userscript)
-├── README.md
-└── screenshots/       # Imagens de demonstração
-```
 
 ---
 
