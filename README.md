@@ -4,6 +4,8 @@ Userscript para o YouTube desenvolvido com Tampermonkey que adiciona um botão d
 
 [![Licença MIT](https://img.shields.io/badge/licença-MIT-green)](LICENSE)
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-suportado-orange)](https://www.tampermonkey.net/)
+
+
 [![Instalar](https://img.shields.io/badge/Instalar-Userscript-blue?style=for-the-badge&logo=Tampermonkey)](https://raw.githubusercontent.com/dionesrosa/YouTube-Plus/main/dist/youtube-plus.user.js)
 
 ---
