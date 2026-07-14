@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Youtube Plus
 // @namespace    https://github.com/dionesrosa
-// @version      1.2.3
+// @version      1.2.4
 // @description  Adiciona funcionalidades para o Youtube.
 // @author       Diones Souza
 // @license      MIT

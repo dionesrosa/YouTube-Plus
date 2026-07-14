@@ -4,7 +4,7 @@
   "output": "dist/youtube-plus.user.js",
   "namespace": "https://github.com/dionesrosa",
   "copyright": "",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Adiciona funcionalidades para o Youtube.",
   "author": "Diones Souza",
   "license": "MIT",
