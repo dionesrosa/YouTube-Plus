@@ -12,8 +12,8 @@
   "icon64": "",
   "homepageURL": "https://github.com/dionesrosa/YouTube-Plus",
   "supportURL": "https://github.com/dionesrosa/YouTube-Plus/issues",
-  "updateURL": "https://raw.githubusercontent.com/dionesrosa/YouTube-Plus/master/script.js",
-  "downloadURL": "https://raw.githubusercontent.com/dionesrosa/YouTube-Plus/master/script.js",
+  "updateURL": "https://raw.githubusercontent.com/dionesrosa/YouTube-Plus/master/youtube-plus.user.js",
+  "downloadURL": "https://raw.githubusercontent.com/dionesrosa/YouTube-Plus/master/youtube-plus.user.js",
   "match": [
     "*://www.youtube.com/*"
   ],
@@ -24,7 +24,7 @@
   "connect": [],
   "tag": [],
   "run_at": "document-idle",
-  "run_in": "normal-tabs",
-  "sandbox": "raw",
+  "run_in": "",
+  "sandbox": "",
   "noframes": false
 }

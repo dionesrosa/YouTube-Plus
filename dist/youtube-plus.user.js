@@ -12,8 +12,6 @@
 // @downloadURL  https://raw.githubusercontent.com/dionesrosa/YouTube-Plus/master/script.js
 // @match        *://www.youtube.com/*
 // @run-at       document-idle
-// @run-in       normal-tabs
-// @sandbox      raw
 // ==/UserScript==
 
 (function() {

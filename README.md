@@ -1,76 +1,67 @@
-# 🖼️ YouTube Thumbnail Downloader
+# YouTube Plus
 
-**Extensão para Tampermonkey** que adiciona um botão "Miniaturas" ao lado do título dos vídeos do YouTube, permitindo visualizar e baixar as miniaturas em diferentes resoluções com um único clique.
+Userscript para o YouTube desenvolvido com Tampermonkey que adiciona um botão de visualização de miniaturas diretamente ao lado do título dos vídeos.
 
 [![Licença MIT](https://img.shields.io/badge/licença-MIT-green)](LICENSE)
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-suportado-orange)](https://www.tampermonkey.net/)
 
 ---
 
-## ✨ Funcionalidades
+## ✨ O que o script faz
 
-- Adiciona um botão **"Miniaturas"** ao lado do título em páginas de vídeo do YouTube (`/watch`).
-- Ao clicar, abre um popup com a miniatura em **qualidade máxima disponível**.
-- Detecta automaticamente a resolução ideal (tenta `maxresdefault.jpg`, depois `hqdefault.jpg`, etc.).
-- Oferece **botões de download** para todas as resoluções padrão do YouTube:
-  - `MAXRESDEFAULT` (1280×720)
-  - `HQDEFAULT` (480×360)
-  - `MQDEFAULT` (320×180)
-  - `SDDEFAULT` (640×480)
-- **Leve e otimizado**: não causa travamentos nem consumo excessivo de CPU.
-- Navegação SPA (navegação interna do YouTube) suportada sem necessidade de recarregar a página.
+O arquivo principal em [src/index.js](src/index.js) adiciona um botão chamado "Miniaturas" na área do título dos vídeos do YouTube.
+
+Ao clicar, ele:
+
+- captura o ID do vídeo a partir da URL;
+- tenta carregar a melhor miniatura disponível em ordem de qualidade;
+- abre um popup com a imagem selecionada;
+- exibe botões para acessar as versões padrão do YouTube em diferentes resoluções.
+
+---
+
+## 🔧 Funcionalidades
+
+- Adiciona o botão "Miniaturas" na interface de vídeo do YouTube.
+- Usa a ordem de tentativa: `maxresdefault.jpg`, `hqdefault.jpg`, `mqdefault.jpg` e `sddefault.jpg`.
+- Mostra a miniatura em uma sobreposição modal, sem sair da página.
+- Oferece links para abrir/baixar cada versão disponível da miniatura.
+- Funciona em navegação SPA do YouTube, sem exigir recarregar a página.
+- Mantém o uso leve com `throttle` e `MutationObserver`.
 
 ---
 
 ## 🚀 Instalação
 
-1. Instale a extensão [Tampermonkey](https://www.tampermonkey.net/) no seu navegador.
-2. Acesse o script diretamente pelo link:
-   - **[script.js](https://raw.githubusercontent.com/dionesrosa/YouTube-Thumbnail-Downloader/master/script.js)**
-3. O Tampermonkey detectará automaticamente e abrirá a janela de instalação. Clique em **Instalar**.
-4. Acesse qualquer vídeo do YouTube e veja o botão **Miniaturas** ao lado do título.
+1. Instale a extensão [Tampermonkey](https://www.tampermonkey.net/) no navegador.
+2. Instale o userscript gerado a partir do projeto.
+3. Acesse qualquer vídeo do YouTube e veja o novo botão "Miniaturas" ao lado do título.
 
 ---
 
 ## 🖱️ Como usar
 
-- Navegue até um vídeo do YouTube (ex: `https://www.youtube.com/watch?v=...`)
-- Ao lado do título, clique no botão **"Miniaturas"**
-- Um popup abrirá com a miniatura do vídeo
-- Utilize os botões abaixo da imagem para baixar em diferentes resoluções
-- Clique fora do popup ou no **X** vermelho para fechar
+1. Abra um vídeo no YouTube.
+2. Clique no botão "Miniaturas" próximo ao título.
+3. O popup exibirá a miniatura em melhor qualidade disponível.
+4. Use os botões abaixo da imagem para abrir cada resolução padrão.
+5. Clique fora da janela ou no botão de fechar para encerrar a visualização.
 
 ---
 
-## 🛠️ Tecnologias e otimizações
+## 🧩 Estrutura do projeto
 
-O script foi desenvolvido com foco em desempenho:
-
-- **Throttle** de verificação do DOM para evitar processamento excessivo
-- **Observer inteligente** que monitora apenas a área do título, reduzindo drasticamente os eventos de mutação
-- **Desconexão automática** do observer quando o usuário não está em uma página de vídeo
-- **Fallback progressivo** para carregar a melhor miniatura disponível
-
-Testado no Chrome e Firefox com Tampermonkey.
+- [src/index.js](src/index.js): lógica principal do userscript.
+- [userscript.config.json](userscript.config.json): metadados e configuração do userscript.
 
 ---
 
-## 🤝 Contribuindo
+## 🤝 Contribuição
 
-Sinta-se à vontade para abrir issues e pull requests no [repositório oficial](https://github.com/dionesrosa/YouTube-Thumbnail-Downloader).
-
-Sugestões de melhorias, correções de bugs e traduções são muito bem-vindas!
+Contribuições são bem-vindas. Caso queira sugerir melhorias, corrigir bugs ou adaptar o script para novas mudanças da interface do YouTube, abra uma issue ou envie um pull request.
 
 ---
 
 ## 📜 Licença
 
-Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-## 📬 Contato
-
-- **Autor:** Diones Souza
-- **GitHub:** [@dionesrosa](https://github.com/dionesrosa)
-- **Suporte:** [Issues](https://github.com/dionesrosa/YouTube-Thumbnail-Downloader/issues)
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
